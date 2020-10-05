@@ -19,7 +19,7 @@ def contact(request):
             message_name,#SUBJECT
             message,#MESSAGE
             message_email,#FROM EMAIL
-            ['tathagat.dalai@gmail.com',],#TO EMAIL
+            ['tathagat.dalai@gmail.com'],#TO EMAIL
 
             )
 
@@ -58,7 +58,7 @@ def appointment(request):
             'Appointment Request View',#SUBJECT
             appointment,#MESSAGE
             your_email,#FROM EMAIL
-            ['tathagat.dalai@gmail.com',],#TO EMAIL
+            ['tathagat.dalai@gmail.com']#TO EMAIL
 
             )
     
