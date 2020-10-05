@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block title%}
+Appointment Details 
+{%endblock%}
+{% block css %}
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+</style>
+  
+{% endblock css  %}
+{% block body %}
+{% load static%}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg'%});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Appointment</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Set Appointment</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+<center>
+    <table>
+        <tr>
+            <h2>Review Your Information :</h2>
+        </tr>
+        <tr>
+          <th>YOURS : </th>
+          <th>DETAILS : </th>
+        </tr>
+        <tr>
+          <td>Name : </td>
+          <td>{{your_name}}</td>
+        </tr>
+        <tr>
+          <td>Phone : </td>
+          <td>{{your_phone}}</td>
+        </tr>
+        <tr>
+          <td>Email : </td>
+          <td>{{your_email}}</td>
+        </tr>
+        <tr>
+          <td>Address : </td>
+          <td>{{your_address}}</td>
+        </tr>
+        <tr>
+          <td>Appointment  Timing : </td>
+          <td>{{your_scheldule}}</td>
+        </tr>
+        <tr>
+          <td>Appointment  Day : </td>
+          <td>{{your_time}}</td>
+        </tr>
+          <tr>
+          <td>Message : </td>
+          <td>{{your_message}}</td>
+        </tr>
+      </table>
+      
+
+
+<br/><br/><br/><br/>
+
+<strong>Note : </strong>This appointment hasn't set yet. We will contact you shortly via telephone to confrim your appointment .
+
+
+<br/><br/>
+</center>
+
+
+  <!-- ***** Contact Area Start ***** -->
+  
+  
+  <!-- ***** Contact Area End ***** -->
+  {% endblock body %}
+
